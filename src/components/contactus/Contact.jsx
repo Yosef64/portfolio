@@ -1,4 +1,4 @@
-import { Instagram, LinkedIn, GitHub } from "@mui/icons-material";
+import { Instagram, LinkedIn, GitHub, Telegram } from "@mui/icons-material";
 import { Box, Typography } from "@mui/material";
 
 export default function Contact() {
@@ -59,19 +59,35 @@ export default function Contact() {
             }}
           />
         </a>
+        <a href="https://www.instagram.com/josi_qlex/">
+          <Instagram
+            sx={{
+              color: "#457B9D",
+              width: 30,
+              height: 30,
+              transition: "ease 1s all",
+              cursor: "pointer",
+              "&:hover": {
+                transform: "scale(1.2)",
+              },
+            }}
+          />
+        </a>
 
-        <Instagram
-          sx={{
-            color: "#457B9D",
-            width: 30,
-            height: 30,
-            transition: "ease 1s all",
-            cursor: "pointer",
-            "&:hover": {
-              transform: "scale(1.2)",
-            },
-          }}
-        />
+        <a href="https://t.me/Yosi64">
+          <Telegram
+            sx={{
+              color: "#457B9D",
+              width: 30,
+              height: 30,
+              transition: "ease 1s all",
+              cursor: "pointer",
+              "&:hover": {
+                transform: "scale(1.2)",
+              },
+            }}
+          />
+        </a>
       </Box>
       <Typography sx={{ fontFamily: "'Sora',sans-serif", fontSize: 12 }}>
         Copyright © 2023. Develop & Designed by yoseph alemu

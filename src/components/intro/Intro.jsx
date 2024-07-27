@@ -4,7 +4,7 @@ import React from "react";
 export default function Intro() {
   // console.log(pa);
   return (
-    <Box sx={{ flexFlow: 1, bgcolor: "#daf8f9", padding: "0 40px" }}>
+    <Box sx={{ flexFlow: 1, bgcolor: "#daf8f9", padding: "0 40px"}}>
       <Grid container xs={12}>
         <Grid xs={12} sm={12} md={6} lg={6} xl={6}>
           <Container
@@ -35,7 +35,7 @@ export default function Intro() {
               sx={{
                 opacity: 0.8,
                 fontSize: 15,
-                mb: 2,
+                mb: 3,
                 fontFamily: "'Sora',sans-serif",
               }}
             >
@@ -60,6 +60,7 @@ export default function Intro() {
                     fontWeight: 400,
                     gap: 1,
                     width: 150,
+                    height: 40,
                     "&:hover": {
                       bgcolor: "#457B9D",
                     },
@@ -84,6 +85,7 @@ export default function Intro() {
                     fontWeight: 400,
                     border: "1px #457B9D solid",
                     width: 150,
+                    height: 40,
                     "&:hover": {
                       bgcolor: "rgba(69, 123, 157, 0.7)",
                       color: "white",

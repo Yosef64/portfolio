@@ -1,11 +1,10 @@
 import * as React from "react";
-import { IconButton, Menu, MenuItem, styled, Typography } from "@mui/material";
+import { IconButton, Menu, MenuItem, styled } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import CssBaseline from "@mui/material/CssBaseline";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import Slide from "@mui/material/Slide";
 import Intro from "./components/intro/Intro";
 import { Link } from "@mui/material";
@@ -16,16 +15,15 @@ import Contact from "./components/contactus/Contact";
 import MenuIcon from "@mui/icons-material/Menu";
 
 function HideOnScroll(props) {
-  const { children, window } = props;
-
+  const { children } = props;
   const trigger = useScrollTrigger();
-
   return (
     <Slide appear={false} direction="down" in={!trigger}>
       {children}
     </Slide>
   );
 }
+
 const pages = [
   {
     href: "#intro",
@@ -48,33 +46,27 @@ const pages = [
     page: "Contact",
   },
 ];
+
+const Div = styled("div")(({ theme }) => ({
+  ...theme.typography,
+  color: "black",
+  fontWeight: "bold",
+  fontSize: 19,
+  fontFamily: "'Sora',sans-serif",
+}));
+
 export default function App(props) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [curId, setCurId] = React.useState("#intro");
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
-  const Div = styled("div")(({ theme }) => ({
-    ...theme.typography,
-    color: "black",
-    fontWeight: "bold",
-    fontSize: 19,
-    fontFamily: "'Sora',sans-serif",
-  }));
   return (
     <React.Fragment>
       <CssBaseline />
@@ -99,14 +91,12 @@ export default function App(props) {
                   ml: 7,
                 },
                 "& a": {
-                  // color: "black",
                   textDecoration: "none",
                   fontFamily: "'Sora',sans-serif",
                 },
                 "& a:hover": {
                   color: "black",
                 },
-
                 display: { xs: "none", md: "flex" },
                 flexGrow: 1,
                 justifyContent: "flex-end",
@@ -117,8 +107,9 @@ export default function App(props) {
                   key={item.href}
                   href={item.href}
                   sx={{
-                    color: item.href == curId ? "#457B9D" : "rgba(0, 0, 0, 0.7)",
-                    fontWeight: item.href == curId ? 700 : "normal",
+                    color:
+                      item.href === curId ? "#457B9D" : "rgba(0, 0, 0, 0.7)",
+                    fontWeight: item.href === curId ? 700 : "normal",
                   }}
                   onClick={() => setCurId(item.href)}
                 >
@@ -162,7 +153,7 @@ export default function App(props) {
                       sx={{
                         textDecoration: "none",
                         color:
-                          page.page == curId ? "black" : "rgba(0, 0, 0, 0.7)",
+                          page.page === curId ? "black" : "rgba(0, 0, 0, 0.7)",
                       }}
                     >
                       {page.page}
@@ -175,22 +166,23 @@ export default function App(props) {
         </AppBar>
       </HideOnScroll>
       <Toolbar />
-      <div id="intro">
-        <Intro />
-      </div>
-      <div id="about">
-        <Aboutme />
-      </div>
-      <div id="skills">
-        <Skills />
-      </div>
-
-      <div id="project">
-        <Projects />
-      </div>
-      <div id="contact">
-        <Contact />
-      </div>
+      <Box sx={{ overflowX: "hidden" }}>
+        <div id="intro">
+          <Intro />
+        </div>
+        <div id="about">
+          <Aboutme />
+        </div>
+        <div id="skills">
+          <Skills />
+        </div>
+        <div id="project">
+          <Projects />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
+      </Box>
     </React.Fragment>
   );
 }
