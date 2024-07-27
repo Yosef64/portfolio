@@ -4,7 +4,7 @@ import React from "react";
 export default function Intro() {
   // console.log(pa);
   return (
-    <Box sx={{ flexFlow: 1, bgcolor: "#daf8f9", padding: "0 40px"}}>
+    <Box sx={{ flexFlow: 1, bgcolor: "#daf8f9", padding: "0 40px" }}>
       <Grid container xs={12}>
         <Grid xs={12} sm={12} md={6} lg={6} xl={6}>
           <Container
@@ -119,7 +119,7 @@ export default function Intro() {
               }}
             >
               <img
-                src="/asset/mypoto.png"
+                src="https://firebasestorage.googleapis.com/v0/b/login-1-62a50.appspot.com/o/mypoto.png?alt=media&token=cf56f8f3-6aa3-4688-af06-856411b0f829"
                 alt="img"
                 style={{ width: "600", height: "600", marginTop: "-120px" }}
               />
