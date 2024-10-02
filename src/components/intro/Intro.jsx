@@ -40,7 +40,7 @@ export default function Intro() {
               }}
             >
               Full stack, Mobile app , and Desktop app developer.<br></br>
-              Easily Self thought software engineer.
+              Software engineer.
             </Typography>
             <Box
               sx={{
