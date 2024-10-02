@@ -63,7 +63,7 @@ export default function AboutMe() {
               fontFamily: "'Sora', sans-serif",
             }}
           >
-            Passionate about competitive programming, I am a self-taught
+            Passionate about competitive programming, I am a
             software engineer who thrives on challenges and continuous learning.
             My journey in the tech world began with curiosity and has evolved
             into a deep-seated passion for coding and problem-solving. When I'm
