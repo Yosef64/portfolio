@@ -119,7 +119,7 @@ export default function Intro() {
               }}
             >
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/login-1-62a50.appspot.com/o/mypoto.png?alt=media&token=cf56f8f3-6aa3-4688-af06-856411b0f829"
+                src="https://firebasestorage.googleapis.com/v0/b/habeshanwall-4dceb.appspot.com/o/another%2Fimage_portfolio.png?alt=media&token=0c48e28a-a7de-4066-98cd-a2d6ebe58e0c"
                 alt="img"
                 style={{ width: "600", height: "600", marginTop: "-120px" }}
               />
