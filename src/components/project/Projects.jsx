@@ -14,7 +14,7 @@ import React, { useState } from "react";
 const projects = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/login-1-62a50.appspot.com/o/download.png?alt=media&token=61c1d0f8-4818-4566-9298-2d2d79d45a08",
+    img: "https://firebasestorage.googleapis.com/v0/b/habeshanwall-4dceb.appspot.com/o/another%2Frental_web.png?alt=media&token=39365dc7-515c-4c26-bc1b-4e8ad7f0cda2",
     title: "Rental Website",
     desc: "a rental wesite that help house owner to find a tenant to his house. It was an amazing experience to work this.",
     git: "https://github.com/Yosef64/Rental_Website",
@@ -32,7 +32,7 @@ const projects = [
   },
   {
     id: 3,
-    img: "https://firebasestorage.googleapis.com/v0/b/login-1-62a50.appspot.com/o/photo_2024-07-09_22-43-24.jpg?alt=media&token=deaf3ae5-b6ab-45f9-bf01-295f0300c306",
+    img: "https://firebasestorage.googleapis.com/v0/b/habeshanwall-4dceb.appspot.com/o/another%2Fwallpaper_page.jpg?alt=media&token=471330ef-414e-4189-accc-71f81970659e",
     title: "Wallpaper Mobile",
     desc: "It's a react-native Wallpaper project that shows impressive habeshan images.",
     git: "https://github.com/Yosef64/wallpaper",
@@ -41,12 +41,30 @@ const projects = [
   },
   {
     id: 4,
-    img: "https://firebasestorage.googleapis.com/v0/b/login-1-62a50.appspot.com/o/Screenshot%202024-07-26%20195138.png?alt=media&token=286b1761-b443-41e7-8240-bd4e7e6dcc69",
+    img: "https://firebasestorage.googleapis.com/v0/b/habeshanwall-4dceb.appspot.com/o/another%2FScreenshot%202025-01-23%20165312.png?alt=media&token=ae2e4554-c8f6-4578-b022-f52a94372d74",
     title: "Portfolio",
     desc: "It's a react project that shows a description about me.",
     git: "https://github.com/Yosef64/portfolio",
     isLive: true,
     live: "josialex.vercel.app",
+  },
+  {
+    id: 5,
+    img: "https://firebasestorage.googleapis.com/v0/b/rent-ffb49.appspot.com/o/photos%2FScreenshot%202024-10-02%20123400.png?alt=media&token=fb394c68-9ec2-4aa7-b4e1-f2573d4abcad",
+    title: "Hakim Hub",
+    desc: "HakimHub is a platform that provides information about healthcare and hospitals. With a few clicks, you can check the availability and address of a hospital, as well as get information about the doctors working there. HakimHub also allows you to filter doctors by their respective subspeciality, experience, and location.",
+    git: "https://github.com/Yosef64",
+    isLive: true,
+    live: "https://hakimhubweb.netlify.app/",
+  },
+  {
+    id: 6,
+    img: "https://firebasestorage.googleapis.com/v0/b/rent-ffb49.appspot.com/o/photos%2FScreenshot%202024-09-25%20113928.png?alt=media&token=4761dcb3-bc48-4e6a-8a71-3d07ad5da4c9",
+    title: "RateEat",
+    desc: "RateEat is a comprehensive mobile application that empowers users to give and consume item-specific reviews while highlighting the growth points of businesses The project utilizes a stack consisting of Node.js for the backend, MongoDB for the database, Flutter for the mobile app development.",
+    git: "https://github.com/Yosef64",
+    isLive: true,
+    live: "https://rateeat.app/",
   },
 ];
 
